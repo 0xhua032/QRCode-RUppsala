@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QR Code Scanner</title>
+    <title>QR Kodläsare - Region Uppsala</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -9,12 +9,16 @@
   </head>
 
   <body>
-    <div id="container">
-      <h1>QR Code Scanner</h1>
+    <div class="container">
+      <img src="assets/ru-logo.png" class="logo">
 
-      <a id="btn-scan-qr">
-        <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
-      <a/>
+      <h1>QR Kodläsare</h1>
+
+      <h3>Tryck på knappen nedan för att skanna en QR kod</h3>
+
+      <a id="btn-scan-qr" class="button">
+        Skanna QR
+      </a>
 
       <canvas hidden="" id="qr-canvas"></canvas>
 
