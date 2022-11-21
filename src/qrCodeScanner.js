@@ -10,12 +10,9 @@ const btnScanQR = document.getElementById("btn-scan-qr");
 
 let scanning = false;
 
-var windowReference = window.open();
-
 qrcode.callback = res => {
   if (res) {
-    windowReference.location = res;
-
+    window.open(res, "_self");
     outputData.innerText = res;
     scanning = false;
 
