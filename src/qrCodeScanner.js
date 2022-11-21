@@ -12,7 +12,12 @@ let scanning = false;
 
 qrcode.callback = res => {
   if (res) {
-    window.open(res);
+    var windowReference = window.open();
+
+    windowReference.location = url;
+
+
+
     outputData.innerText = res;
     scanning = false;
 
