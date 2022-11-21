@@ -12,6 +12,7 @@ let scanning = false;
 
 qrcode.callback = res => {
   if (res) {
+    window.open(outputData, '_blank');
     outputData.innerText = res;
     scanning = false;
 
