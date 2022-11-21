@@ -14,8 +14,7 @@ qrcode.callback = res => {
   if (res) {
     var windowReference = window.open();
 
-    windowReference.location = url;
-
+    windowReference.location = res;
 
 
     outputData.innerText = res;
